@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #679096;
+    color: #333;
+    padding: 20px;
+    
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table header styling */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid #5cb85c;
+    letter-spacing: 1px;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Row hover effect */
+tr:hover {
+    background-color: #e38cc1;
+    color: white;
+    cursor: pointer;
+}
+
+/* Message column styling */
+td:nth-child(4) {
+    color: #2c3e50;
+    
+}
+
+/* Responsive table */
+@media (max-width: 600px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+    
+    th {
+        text-align: center;
+    }
+}

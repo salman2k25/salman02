@@ -1,0 +1,105 @@
+/* Apply a background image with overlay and full-screen layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background:url('images/sea6.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background: rgba(239, 182, 228, 0.8);
+    backdrop-filter: blur(0.2px);
+    border-radius: 10px;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease-in-out;
+}
+
+.login-box:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #100e0e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Input group styling */
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #0c0b0b;
+    outline: none;
+    color: #0e0d0d;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #4CAF50;
+}
+
+.input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #110f0f;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: #4CAF50;
+}
+
+/* Submit button styling */
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1109e0;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+    .login-box {
+        width: 90%;
+    }
+}

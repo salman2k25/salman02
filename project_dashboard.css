@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/wsea.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard {
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    background: rgba(75, 159, 192, 0.6);
+    border-radius: 15px;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-btn {
+    background: linear-gradient(135deg, #ff6f61, #ffeb3b);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(255, 105, 97, 0.5);
+}
+
+.project-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 105, 97, 0.8);
+}
+
+.project-btn:focus {
+    outline: none;
+}
